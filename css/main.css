@@ -1,1 +1,114 @@
-/* font-family: 'Poppins', sans-serif; */
+/* GENERALES */
+:root {
+  --coral: coral;
+  --blue: #0089E0;
+  --gray: #444;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* FIN GENERALES */
+/* HEADER */
+.menu-bar-pc {
+  /* background-color: var(--coral); */
+  width: 100%;
+  min-height: 68px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding: 0 2.25rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  /* display: none; */
+}
+
+.logo{
+  display: inline-block;
+  width: 3.125rem;
+}
+
+.logo img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.menu-principal a, .top-redes a{
+  display: inline-block;
+  padding: 0 0.625rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.876rem;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  transition: all 0.3s ease;
+}
+
+.menu-principal a:last-child, .top-redes a:last-child{
+  padding-right: 0;
+}
+
+.top-redes a i {
+  font-size: 1rem;
+}
+
+.menu-principal a:hover, .top-redes a:hover {
+  color: var(--blue);
+}
+
+/* Fixed menu */
+
+.fixed-header {
+  width: 100%;
+  min-height: 68px;
+  border-bottom: 1px solid rgba(204,204,204,0.5);
+  padding: 0 2.25rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: all 0.4s ease;
+  margin-top: -68px;
+}
+
+.fixed-header .menu-principal a, .top-redes a{
+  color: var(--gray);
+}
+
+.fixed-header .menu-principal a:hover, .top-redes a:hover {
+  color: var(--blue);
+}
+
+
+/* fin fixed menu */
+
+/* Mobile menu */
+.menu-mobile {
+  display: none;
+}
+/* Fin mobile menu */
+/* FIN HEADER */
