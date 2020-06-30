@@ -221,6 +221,39 @@ body {
   width: 100%;
   vertical-align: top;
 }
+
+/* Modal fotos proyectos */
 /* Fin Proyectos */
+
+/* Acerca de */
+.acerca-de {
+  background-color: var(--gray-light);
+}
+
+.acerca-de .contenedor {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.acerca-de .contenedor .titulo-seccion {
+  width: 33%;
+  text-align: left;
+}
+
+.acerca-de .contenedor .titulo-seccion h2 {
+  margin-bottom: 0;
+}
+
+.acerca-de .contenedor .texto-acerca-de {
+  width: 66%;
+  text-align: left;
+}
+
+.acerca-de .contenedor .texto-acerca-de p {
+  color: var(--gray2);
+}
+
+/* Fin acerca de */
 
 /* FIN MAIN */
