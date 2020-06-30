@@ -6,6 +6,7 @@
   --gray-light:#f3f4fa;
   --border: #ccc;
   --gray2: #979797;
+  --shadow: #aaa;
 }
 
 * {
@@ -130,7 +131,7 @@ body {
 /* Fin mobile menu */
 /* FIN HEADER */
 /* MAIN */
-/* Banner Principal */
+/* BANNER PRINCIPAL */
 .main {
   width: 100%;
   margin-top: -68px;
@@ -194,9 +195,9 @@ body {
   color: var(--blue);
 }
 
-/* Fin Banner Principal */
+/* FIN BANNER PRINCIPAL */
 
-/* Proyectos */
+/* PROYECTOS */
 .proyectos {
   background-color: var(--gray-light);
   padding: 108px 0 54px 0;
@@ -223,9 +224,9 @@ body {
 }
 
 /* Modal fotos proyectos */
-/* Fin Proyectos */
+/* FIN PROYECTOS */
 
-/* Acerca de */
+/* ACERCA DE*/
 .acerca-de {
   background-color: var(--gray-light);
 }
@@ -253,7 +254,59 @@ body {
 .acerca-de .contenedor .texto-acerca-de p {
   color: var(--gray2);
 }
+  /* FIN ACERCA DE */
 
-/* Fin acerca de */
+/* SLIDER */
+.contenedor-slider {
+  background-color: var(--gray-light);
+  width: 100%;
+  padding: 54px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  width: 400%;
+  display: flex;
+}
+
+.slide {
+  width: 15%;
+  max-width: 950px;
+  margin-right: 0.7%;
+  box-shadow: 0 20px 40px var(--shadow);
+}
+
+.slide img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.btn-anterior, .btn-siguiente {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+}
+
+.btn-anterior {
+  left: 2%;
+}
+
+.btn-siguiente {
+  right: 2%;
+}
+
+.btn-anterior i, .btn-siguiente i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.btn-anterior i:hover, .btn-siguiente i:hover {
+  color: var(--blue);
+}
+
+/* FIN SLIDER */
 
 /* FIN MAIN */
