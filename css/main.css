@@ -309,4 +309,64 @@ body {
 
 /* FIN SLIDER */
 
+/* SECCIÓN NUESTRO EQUIPO */
+
+.nuestro-equipo {
+  background-color: var(--gray-light);
+  padding-top: 54px;
+  padding-bottom: 108px;
+}
+
+.equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.persona-equipo {
+  background-color: #fff;
+  padding: 50px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 32px -1px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.persona-equipo:first-child, .persona-equipo:last-child {
+  position: relative;
+  top: 20px;
+}
+
+.foto {
+  width: 50%;
+  max-width: 100px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.foto img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.texto h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.texto h4 {
+  font-size: 0.8rem;
+  color: var(--gray2);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  font-size: 0.9rem;
+  color: var(--gray2);
+  font-weight: 400;
+}
+/* FIN SECCIÓN NUESTRO EQUIPO */
+
 /* FIN MAIN */
