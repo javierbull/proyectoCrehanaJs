@@ -1,4 +1,4 @@
-@media screen and (max-width:1040px){
+@media screen and (max-width:1040px) {
 
   /* NUESTRO EQUIPO */
   .nuestro-equipo .titulo-seccion {
@@ -23,7 +23,6 @@
   }
 
   /* FIN NUESTRO EQUIPO */
-
   /* INFORMACION EXTRA */
   .info {
     width: 100%;
@@ -32,42 +31,161 @@
   .foto-infoExtra {
     display: none;
   }
+
   /* FIN INFORMACION EXTRA */
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:900px) {
 
-/* HEADER */
-.menu-bar-pc {
-  display: none;
+  /* HEADER */
+  .menu-bar-pc {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    width: 100%;
+    padding: 5px 18px;
+    background-color: var(--white);
+    color: var(--gray);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .menu-mobile .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-mobile .barra .logo {
+    width: 40px;
+  }
+
+  .menu-mobile .barra a i {
+    font-size: 1.4rem;
+    color: var(--gray);
+  }
+
+  .menu-mobile .menu-principal a {
+    color: var(--gray);
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+  }
+
+  .menu-mobile .menu-principal a:hover {
+    background-color: var(--gray-light);
+  }
+
+  .menu-mobile .menu-principal {
+    width: 80%;
+    display: block;
+    position: fixed;
+    top: 56px;
+    background-color: var(--white);
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    border-right: 1px solid rgba(204, 204, 204, 0.5);
+    box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    left: -100%;
+  }
+
+  .fixed-header {
+    display: none;
+  }
+
+  /* FIN HEADER */
+  /* main */
+  .main {
+    margin-top: 0;
+  }
+
+  /* ACERCA DE  */
+  .acerca-de .contenedor .titulo-seccion, .acerca-de .contenedor .texto-acerca-de {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* FIN ACERDA DE */
+  /* FORMULARIO */
+  .formulario {
+    width: 100%;
+    text-align: center;
+  }
+
+  .foto-contacto {
+    display: none;
+  }
+
+  /* FIN FORMULARIO */
+  /* FIN MAIN */
 }
 
-.menu-mobile {
-  display: block;
-  width: 100%;
-  padding: 5px 18px;
-  background-color: var(--white);
-  color: var(--gray);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
+@media screen and (max-width: 550px) {
+  /* BANNER PRINCIPAL */
+  .texto-banner h1 {
+    font-size: 4rem;
+  }
+  /* FIN BANNER PRINCIPAL */
 
-.menu-mobile .barra {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  /* TITULO SECCION */
+  .titulo-seccion h2 {
+    font-size: 2.125rem;
+  }
+  /* FIN TITULO SECCION */
 
-.menu-mobile .barra .logo {
-  width: 40px;
-}
+  /* PROYECTOS */
+  .proyecto {
+    width: 49%;
+  }
+  /* FIN PROYECTOS */
 
-.menu-mobile .barra a i {
-  font-size: 1.4rem;
-  color: var(--gray);
-}
-/* FIN HEADER */
+  /* NUESTRO EQUIPO */
+  .persona-equipo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* FIN NUESTRO EQUIPO */
 
+  /* INFORMACION EXTRA */
+  .info-extra {
+    background-color: var(--gray);
+    padding: 50px;
+  }
+
+  .info {
+    /* background-color: pink; */
+    width: 100%;
+  }
+
+  .contenido-info {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .icono-info {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .icono-info i {
+    font-size: 3.5rem;
+  }
+
+  .texto-info {
+    margin-left: 0;
+  }
+
+  .texto-info h4 {
+    font-size: 1.175rem;
+  }
+
+  .contenido-info:first-child {
+    margin-bottom: 40px;
+  }
+  /* FIN INFORMACION EXTRA */
 }
