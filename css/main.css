@@ -18,6 +18,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -255,6 +256,37 @@ body {
 }
 
 /* Modal fotos proyectos */
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 600px;
+  width: 90%;
+}
+
+.modal .btn-cerrar {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background-color: var(--blue);
+  text-align: center;
+  cursor: pointer;
+  line-height: 50px;
+}
+/* Fin modal proyectos */
 /* FIN PROYECTOS */
 
 /* ACERCA DE*/
