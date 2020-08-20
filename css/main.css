@@ -591,6 +591,16 @@ body {
   background-image: url('../img/foto-contacto.jpg');
   background-size: cover;
 }
+
+/* Validación formulario */
+.formulario .error {
+  color: var(--coral);
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: none;
+}
+/* Fin validación formulario */
 /* FIN SECCIÓN CONTACTO */
 
 /* FIN MAIN */

@@ -108,7 +108,7 @@
         <div class="texto-banner">
           <h2>Siempre Innovando</h2>
           <h1>Design Studio</h1>
-          <a href="#" class="btn btn-primary scroll-suave">VER PROYECTOS</a>
+          <a href="#proyectos" class="btn btn-primary scroll-suave">VER PROYECTOS</a>
         </div>
       </div>
 
@@ -281,13 +281,15 @@
             <form>
               <div>
                 <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                <p class="error">Escribe tu nombre</p>
               </div>
               <div>
                 <input type="email" name="email" placeholder="Correo electrónico" id="email">
+                <p class="error">¿y tu correo?</p>
               </div>
               <div>
                 <textarea name="mensaje" placeholder="Cuéntanos de tu proyecto" id="mensaje"></textarea>
-
+                <p class="error">Escribe tu mensaje pues</p>
               </div>
               <div>
                 <input type="submit" name="enviar" value="Enviar">
@@ -326,6 +328,7 @@
   <script src="js/scrollSuave.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/validar.js"></script>
   <script src="js/parallax.min.js"></script>
   <!-- Buscar:
   t(e).on("ready.px.parallax.data-api",function(){t('[data-parallax="scroll"]').parallax()})}
